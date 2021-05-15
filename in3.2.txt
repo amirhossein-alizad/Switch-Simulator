@@ -1,0 +1,25 @@
+MySwitch 10 1
+MySwitch 10 2
+MySwitch 10 3
+MySwitch 10 4
+MySwitch 10 5
+MySwitch 10 6
+connect_sw_sw 1 2 2 2
+connect_sw_sw 1 3 3 3
+connect_sw_sw 1 4 4 4
+connect_sw_sw 1 5 5 5
+connect_sw_sw 2 1 4 1
+connect_sw_sw 3 1 5 1
+connect_sw_sw 4 2 6 6
+connect_sw_sw 5 3 6 3
+MySystem 1
+connect_sy_sw 1 3 0
+MySystem 2
+connect_sy_sw 2 4 0
+MySystem 3
+connect_sy_sw 3 6 0
+MySystem 4
+connect_sy_sw 4 5 0
+sptree
+req 1 2 in2.txt
+req 3 4 src/Main.cpp
